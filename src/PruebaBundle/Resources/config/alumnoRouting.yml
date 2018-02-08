@@ -1,0 +1,7 @@
+alumno_homepage:
+    path:     /
+    defaults: { _controller: PruebaBundle:Alumno:index }
+alumno_list:
+    path:     /list
+    defaults: { _controller: PruebaBundle:Alumno:list }
+    

@@ -1,0 +1,9 @@
+{% extends '@Empresa/empresa.html.twig' %}
+{% block contenido %}
+<ul>
+{% for nombre in nombres if nombre!= "Paco" %}
+    <li>{{nombre}}</li>
+{% endfor %}
+
+</ul>
+{% endblock %}

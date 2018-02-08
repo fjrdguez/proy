@@ -1,0 +1,12 @@
+api_homepage:
+    path:     /
+    defaults: { _controller: ApiBundle:Default:index }
+api_getEmpresaById:
+    path:     /empresa/{id}
+    defaults: { _controller: ApiBundle:Default:getEmpresaByIdGetMethod, id: 0 }
+    methods:    [GET]
+api_createEmpresa:
+    path:     /empresa/create
+    defaults: { _controller: ApiBundle:Default:createEmpresa}
+    methods:    [POST]
+    

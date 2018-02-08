@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<br>
+<img src="{{ asset('img/Logo.png')}}">
+<div class="texto">
+    {% if nombre == "Paco" %}
+     Hola, si soy yo, {{nombre}}
+     {% elseif nombre == "Maria" %}
+     {{nombre}} es un nombre de mujer
+     {% else %}
+     Hola {{nombre}}
+     {%endif%}
+</div> 
+{% endblock %}

@@ -1,0 +1,31 @@
+empresa_empresa:
+    resource: "@EmpresaBundle/Resources/config/routing/empresa.yml"
+    prefix:   /empresa
+
+empresa_homepage:
+    path:     /
+    defaults: { _controller: EmpresaBundle:Default:index }
+empresa_create:
+    path:     /create
+    defaults: { _controller: EmpresaBundle:Default:create }
+    
+empresa_buscar:
+    path:     /buscar/{id}
+    defaults: { _controller: EmpresaBundle:Default:buscar, id:1 }
+    methods:   [GET]
+empresa_buscarNomre:
+    path:     /buscarNombre/{nombre}
+    defaults: { _controller: EmpresaBundle:Default:buscarNombre, nombre: "" }    
+empresa_update:
+    path:     /update
+    defaults: { _controller: EmpresaBundle:Default:update}        
+empresa_new:
+    path:     /new
+    defaults: { _controller: EmpresaBundle:Default:nuevo}        
+empresa_newTipo:
+    path:     /newTipo
+    defaults: { _controller: EmpresaBundle:Default:nuevoTipo}        
+empresa_listaNombres:
+    path:     /listaNombres
+    defaults: { _controller: EmpresaBundle:Default:listaNombres}            
+    

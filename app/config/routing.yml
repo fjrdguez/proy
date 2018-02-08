@@ -1,0 +1,39 @@
+admin:
+    resource: "@AdminBundle/Resources/config/routing.yml"
+    prefix:   /admin/
+
+usuarios:
+    resource: "@UsuariosBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+futbol:
+    resource: "@FutbolBundle/Resources/config/routing.yml"
+    prefix:   /futbol
+
+api:
+    resource: "@ApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
+empresa:
+    resource: "@EmpresaBundle/Resources/config/routing/empresa.yml"
+    prefix:   /empresa
+
+
+prueba:
+    resource: "@PruebaBundle/Resources/config/routing.yml"
+    prefix:   /prueba
+
+
+alumno:
+    resource: "@PruebaBundle/Resources/config/alumnoRouting.yml"
+    prefix:   /alumno
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+paco:
+    resource: "@PacoBundle/Resources/config/routing.yml"
+    prefix:   /paco
+logout:
+    path:   /usuarios/logout
